@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+/* REUSABLE CSS CLASS */
+
+.section{
+  padding: 6rem 0 2rem;
+  
+}
+.main{
+  background: white
+}
+.section__title{
+  font-size:large;
+  color: black;
+}
+
+.section__subtitle{
+  display:block ;
+  font-size: small;
+  margin-bottom: 4rem;
+}
+
+.section__title,
+.section__subtitle{
+  text-align:center;
+}
+
+/* LAYOUT */
+
+.container{
+  max-width: 968px;
+  margin-left:auto;
+  margin-right: auto;
+  
+}
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* BUTTONS */
+.button{
+  display:inline-block;
+  background-color: rgb(50, 48, 48);
+  color:whitesmoke;
+  padding: 1.25rem 2rem ;
+  border-radius:1rem;
+  font-weight: 200;
+}
+.button:hover {
+  transform: scale(1, 1);
+}
+
+.button:hover{
+  background-color:white;
+  color: black;
+  transition: .3s;
+  border: .5px solid black;
+
+}
+.button__icon{
+  margin-left: 20px;
+}
+.button__flex{
+  display: inline-flex;
+  align-items: center;
+}
+/* BREAK POINTS */
+
+@media screen and (max-width:992px){
+  /* .container{
+    margin-left: 22px;
+    margin-right: 22px;
+  } */
+  /* .nav__toggle{
+    display: none;
+    visibility: hidden;
+} */
+}
+@media screen and (max-width:768px){
+  body{
+    margin:auto
+  }
+  .section{
+    padding: 2rem 0 4rem;
+  }
+  .section__subtitle{
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width:576px){
+  body{
+    margin:auto
+  }
+}
+/* for smaller display */
+@media screen and (max-width:360px){
+  
+  body{
+    margin:auto
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-image: linear-gradient(to bottom right,skyblue, rgb(255, 255, 255)); */
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea{
+  font-family: sans-serif;
+  font-size: medium;
+}
+
+body{
+  /* background-color:rgb(255, 255, 255); */
+  background-image: linear-gradient(135deg,white 10%,white 100%);
+  color: black;
+  /* background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(162,165,204,1) 0%, rgba(46,168,255,1) 26%, rgba(0,170,255,1) 64%); */
+}
+h1,h2,h3{
+  color:black;
+  font-weight: 200;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  
+}
+
+button{
+  cursor: pointer;
+  border:none;
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}

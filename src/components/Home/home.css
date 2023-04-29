@@ -1,0 +1,203 @@
+.head__content{
+    grid-template-rows: 116px repeat(2,1fr);
+    padding-top: 2.5rem;
+    column-gap: 7rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-right: 20px;
+    padding: right 100px; 
+}
+/* .home{
+    margin-bottom:3rem
+} */
+
+.line{
+    visibility: hidden;
+}
+hr{
+    margin-left:3rem;
+    margin-right:3rem  ;
+}
+
+.home__social{
+    display: flex;
+    padding: 2.5rem;
+    grid-template-rows: max-content;
+    gap: 5rem;
+    justify-content: center;
+    padding-bottom: 0%;
+    margin-top: 6rem;
+}
+.home__social-icon{
+    color: black;
+}
+.home__social-icon:hover{
+    color:skyblue;
+}
+
+.home__img{
+    background: url(../../assets/profile.jpe);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 383px;
+    height: 294px;
+    right: 3.4rem;
+    border-radius: 2rem;
+    /* margin-right: 5.5rem; */
+}
+@media screen and (max-width:786px) {
+    .home__title{
+        margin: 0;
+        font-size: 2rem;
+    }
+    .home__subtitle{
+        margin-left: 40px;
+    }
+    /* .home__data{
+        gap: 2rem;
+        width: 100vh;  
+    } */
+    .home{
+        margin: 0%;
+        padding: 0%;
+    }
+    /* .home__description{
+        margin-left: 30px;
+        margin-right: 2px;
+    } */
+    .head__content{
+       display: inline-block;
+       padding-top: 49px;
+       margin-right: 0;
+       
+    }
+    .home__img{
+        background: url(../../assets/profile.jpe);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 200px;
+        margin: auto;
+        right: 3rem;
+        position: absolute;
+        margin-top: 4rem;
+        z-index: -1;
+    }
+    .home__social{
+        
+        display: flex;
+        padding: 2.5rem;
+        grid-template-rows: max-content;
+        gap: 5rem;
+        justify-content: center;
+        padding-bottom: 0%;
+        margin-top: 1rem;
+        /* margin-left: 14rem; */
+    }
+    hr{
+       visibility: hidden;
+    }
+    .line{
+        visibility: hidden;
+    }
+    
+}
+@media screen and (max-width:576px){
+    /* .home__data{
+        width: 100%;
+    } */
+    .home__title{
+        text-align: center;
+        margin-right: 3rem;
+        font-size: 2rem;
+    }
+    .line{
+        visibility: visible;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    }
+    .home__img{
+        background: url(../../assets/profile.jpe);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 218px;
+    margin-left: -7rem;
+    margin-top: 4rem;
+    z-index: -1;
+    }
+    .home__social{
+        gap: 5rem;
+    }
+    .home_description{
+        margin-right: 292px;
+        padding: 0%;
+    }
+    .head__content{
+        grid-template-rows: 116px repeat(2,1fr);
+        padding-top: 2.5rem;
+        column-gap: 7rem;
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        margin-right: 0;
+        padding: right 100px; 
+    }
+}
+/* @media screen and (min-width:350px){
+    .home__title{
+        text-align: center;
+        left: 1rem;
+    }
+} */
+@media screen and (max-width:350px){
+
+    .home__title{
+        text-align: center;
+        margin-right: 3rem;
+        font-size: 2rem;
+        right: 2rem;
+    }
+    .home__social{
+        gap: 5rem;
+    }
+    /* .home__data{
+        width: 100%;
+    } */
+    .line{
+        visibility: visible;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-bottom: 2rem;
+    }
+    .home__img{
+        visibility: hidden;
+    }
+    .home_description{
+        right: 1rem;
+        padding-right: 0%;
+    }
+    /* .home__img{
+        background: url(../../assets/profile.jpe);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 241px;
+        height: 203px;
+        margin: auto;
+        right: -12rem;
+        position: absolute;
+        margin-top: 6rem;
+        z-index: -1;
+    } */
+    /* .home_description{
+        margin-top: 14rem;
+        padding: 0;
+    } */
+}

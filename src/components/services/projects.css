@@ -1,0 +1,197 @@
+.ser{
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 6rem;
+    margin: 0 9rem 0rem 9rem ;
+}
+/* .services{
+    margin: 6rem;
+} */
+.__logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 238px;
+    height: 238px;
+}
+.imgs{
+    text-align: center;
+}
+.services__info{
+    text-align: left;
+    margin-top: 6rem;
+}
+.services__infos{
+    text-align: right;
+    margin-top: 6rem;
+}
+.grids {
+    position: absolute;
+    /* grid-template-columns: repeat(2,1fr); */
+    gap: 0;
+    width: 62%;
+    height: 309%;
+    left: 25rem;
+    
+    /* margin-top: 9rem; */
+    
+}
+.grids2{
+    position: absolute;
+    /* grid-template-columns: repeat(2,1fr); */
+    width: 62%;
+    height: 9rem;
+    margin-top: 17.5rem;
+    margin-right: 1rem;
+    /* left: 25rem; */
+    right: 25rem;
+    z-index: -1;
+    rotate: 180deg;
+}
+.grids3{
+    position: absolute;
+    /* grid-template-columns: repeat(2,1fr); */
+    gap: 0;
+    width: 62%;
+    height: 25rem;
+    /* right: 25rem; */
+    margin-left: 25rem;
+    margin-top: 30rem;
+}
+.grids4{
+    position: absolute;
+    /* grid-template-columns: repeat(2,1fr); */
+    width: 62%;
+    height: 8.8rem;
+    margin-top: 32.5rem;
+    margin-right: 1rem;
+    /* left: 25rem; */
+    right: 25rem;
+    z-index: -1;
+    rotate: 180deg;
+}
+
+.right  {
+    background-color: rgba(255, 0, 0, 0.451);
+    width: 100%;
+    height: 5rem;
+    z-index: -1;
+    /* margin-right: 12rem; */
+    margin-top: 8.3rem;
+    border-bottom-right-radius: 7rem;
+    border-top-right-radius: 7rem;
+    animation:move 3.5s  forwards ease-in-out;
+    
+}
+
+.left{
+    background-color: rgba(0, 128, 0, 0.451);
+    width: 100%;
+    height: 5rem;
+    margin-top: -17rem;
+    z-index: -1;
+    border-bottom-left-radius: 7rem;
+    border-top-left-radius: 7rem;
+    rotate: 180deg;
+    animation:move 3.5s forwards ease-in-out;
+}
+.rightt{
+    background-color: rgba(255, 0, 0, 0.451);
+    width: 100%;
+    height: 5rem;
+    z-index: -1;
+    margin-right: 12rem;
+    margin-top: 8.3rem;
+    border-bottom-right-radius: 7rem;
+    border-top-right-radius: 7rem;
+    
+    animation:move 3.5s forwards ease-in-out;
+}
+.leftt{
+    background-color: rgba(0, 128, 0, 0.451);
+    width: 100%;
+    height: 5rem;
+    margin-top: -2rem;
+    z-index: -1;
+    border-bottom-left-radius: 7rem;
+    border-top-left-radius: 7rem;
+    rotate: 180deg;
+    animation:move 3.5s forwards ease-in-out;
+}
+@keyframes move {
+    from{
+        width: 0%;
+        transition-timing-function: ease-in-out;
+        ransform: translateX(-100px);
+      opacity: 0;
+}
+to {
+    width: 100%;
+        transition-timing-function: ease-in-out;
+        ransform: translateX(0px);
+        opacity: 1;
+}
+}
+
+
+
+@media screen and (max-width:992px){
+    
+  }
+  @media screen and (max-width:768px){
+    .grids,.grids2,.grids3,.grids4{
+        visibility: hidden;
+        display: none;
+    }
+    .ser{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 0rem;
+        margin: 1rem;
+    }
+    .__logo {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+    }
+    .services__info{
+        text-align: left;
+        margin-top: 0rem;
+    }
+    .services__infos{
+        text-align: right;
+        margin-top: 0rem;
+    }
+
+    
+    
+    
+  }
+  @media screen and (max-width:576px){
+    .ser{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 0rem;
+        margin: 1rem;
+    }
+    .__logo {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+    }
+    .services__info{
+        text-align: left;
+        margin-top: 0rem;
+        font-size: 14px;
+    }
+    .services__infos{
+        text-align: right;
+        margin-top: 0rem;
+        font-size: 14px;
+    }
+  }
+  /* for smaller display */
+  @media screen and (max-width:350px){
+  
+  }
