@@ -14,7 +14,7 @@ const Header =()=>{
                 <div className={Toggle ? "nav__menu show-menu": "nav__menu"}>
                     <ul className="nav__list grid">
                         <li className="nav__item">
-                            <a href="#home" className="fa fa-home nav__link active-link">
+                            <a href="#home" className="fa fa-home nav__link ">
                                 <h6 className="  nav__icon">Home</h6>
                             </a>
                         </li>
